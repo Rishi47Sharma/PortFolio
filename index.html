@@ -24,11 +24,12 @@
     <!-- section -->
     <section>
       <h2 id="text">
-        <span>FRONT-END WEB DEVLOPER & ANDRIOD DEVLOPER</span><br />Yuraj Sharma
+        <span>FRONT-END WEB DEVLOPER & ANDRIOD DEVLOPER</span><br />Rishikesh
+        Sharma
       </h2>
-      <img src="./images/bird1.png" id="bird1" />
-      <img src="./images/bird2.png" id="bird2" />
-      <!-- <img src="/images/forest.png" id="forest" /> -->
+      <img class="bird1" src="./images/bird1.png" id="bird1" />
+      <img class="bird" src="./images/bird2.png" id="bird2" />
+
       <img src="./images/rocks.png" id="rocks" />
       <img src="./images/water.png" id="water" />
     </section>
@@ -40,15 +41,74 @@
 
           <span
             >the user experience Using HTML, JavaScript and CSS to bring
-            concepts to life.</span
+            concepts to life. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Laborum earum nostrum doloribus, reprehenderit
+            itaque hic quae aperiam, laudantium cupiditate neque, quibusdam
+            deserunt vero illo at blanditiis. Aperiam commodi facilis
+            perferendis! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Saepe deserunt corrupti excepturi atque, dolorem modi expedita
+            beatae quae soluta enim, cupiditate commodi similique ratione
+            perferendis delectus? Molestiae obcaecati aspernatur eaque.</span
           >
         </div>
       </div>
       <div class="i-right">
         <img src="./images/fish1.png" class="img" id="fish1" alt="" />
       </div>
+      <div>
+        <div class="wave" id="wave1" style="--i: 1"></div>
+        <div class="wave" id="wave2" style="--i: 2"></div>
+        <div class="wave" id="wave3" style="--i: 3"></div>
+        <div class="wave" id="wave4" style="--i: 4"></div>
+      </div>
     </div>
 
+    <div class="project">
+      <div class="i-left">
+        <span class="i-about">project</span>
+        <span class="i-about">project</span>
+      </div>
+      <div class="p-bottom">
+        <div class="container">
+          <div class="drop" style="--clr: #ff0f5b">
+            <div class="content">
+              <h2>01</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                voluptates non porro explicabo itaque nam consectetur cumque quo
+                quam assumenda error, dolor provident molestiae, harum
+                doloremque? Modi quisquam unde officiis.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="drop" style="--clr: #be01fe">
+            <div class="content">
+              <h2>01</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                voluptates non porro explicabo itaque nam consectetur cumque quo
+                quam assumenda error, dolor provident molestiae, harum
+                doloremque? Modi quisquam unde officiis.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="drop" style="--clr: #01b4ff">
+            <div class="content">
+              <h2>01</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                voluptates non porro explicabo itaque nam consectetur cumque quo
+                quam assumenda error, dolor provident molestiae, harum
+                doloremque? Modi quisquam unde officiis.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       let text = document.getElementById("text");
       let bird1 = document.getElementById("bird1");
@@ -66,7 +126,7 @@
         bird2.style.top = value * -1.5 + "px";
         bird2.style.left = value * -2 + "px";
 
-        fish1.style.right = value;
+        // fish1.style.right = -300 + value;
         console.log(value);
       });
     </script>

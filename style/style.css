@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 * {
   margin: 0;
@@ -78,6 +79,12 @@ section img {
   object-fit: cover;
   pointer-events: none;
 }
+.bird1 {
+  animation: animate 3s ease-in-out infinite;
+}
+.bird {
+  animation: animate 2s ease-in-out infinite;
+}
 section #text {
   position: absolute;
   color: #094b65;
@@ -95,6 +102,8 @@ section #text span {
   display: flex;
   position: relative;
   padding: 100px;
+  height: 100vh;
+  width: 100%;
   background-color: #094b65;
 }
 
@@ -106,14 +115,17 @@ section #text span {
   /* flex: 1;
     flex-grow: unset; */
   flex: 1;
+  z-index: 1;
 }
 .i-left .i-about {
   display: flex;
   text-transform: uppercase;
-  font-size: 52px;
+  color: #cfcaca;
+  font-size: 85px;
+  font-family: "Secular One", sans-serif;
 }
 .i-left span:nth-child(2) {
-  margin-top: -78px;
+  margin-top: -124px;
   color: turquoise;
   animation: anm 2s ease-in-out infinite;
 }
@@ -121,48 +133,190 @@ section #text span {
   0%,
   100% {
     clip-path: polygon(
-      0% 0%,
+      0% 46%,
+      16% 45%,
+      34% 52%,
+      50% 61%,
+      68% 65%,
+      85% 61%,
+      100% 53%,
       100% 100%,
-      100% 100%,
-      40% 26%,
-      53% 38%,
-      67% 48%,
-      80% 51%,
-      70% 49%,
-      90%60%,
-      0% 90%
+
+      0% 100%
     );
   }
   50% {
     clip-path: polygon(
-      0 59%,
-      14% 54%,
-      30% 53%,
-      45% 56%,
-      57% 46%,
-      66% 31%,
-      78% 17%,
-      100% 0%,
-      100% 99%,
-      0% 99%
+      0% 66%,
+      14% 73%,
+      34% 76%,
+      50% 71%,
+      64% 62%,
+      79% 55%,
+      100% 51%,
+      100% 100%,
+      0% 100%
     );
   }
 }
 .img {
   position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 100%;
-  max-height: 50%;
+  bottom: 30%;
+  right: 20%;
+  max-width: 12rem;
+  max-height: 9rem;
   object-fit: cover;
   pointer-events: none;
   background-color: #094b65;
-  z-index: 1;
+
+  animation: animate 4s ease-in-out infinite;
 }
-/* .i-right{
-    display: flex;
-  flex-direction: row; */
-/* max-width: 50%;
- flex-grow: 1;    */
-/* flex: 1;
-} */
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 100px;
+  padding-top: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave1.png);
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.25s);
+}
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 0.5;
+  background-position-x: 400px;
+}
+.wave#wave2 {
+  z-index: 999;
+  opacity: 1;
+  background-position-x: 300px;
+}
+.wave#wave3 {
+  z-index: 998;
+  opacity: 0.2;
+  background-position-x: 200px;
+}
+.wave#wave4 {
+  z-index: 1000;
+  opacity: 0.7;
+  background-position-x: 700px;
+}
+.p-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: #fff;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+
+.container .drop {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #eff0f4;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.4s ease-in-out;
+}
+.container .drop:nth-child(1) {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.container .drop:nth-child(2) {
+  border-radius: 69% 31% 70% 30% / 62% 60% 40% 38%;
+}
+.container .drop:nth-child(3) {
+  border-radius: 69% 31% 26% 74% / 62% 60% 40% 38%;
+}
+.container .drop:hover {
+  border-radius: 50%;
+}
+.container .drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.container .drop::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.container .drop .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+.container .drop .content h2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 0.1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
+.container .drop .content a {
+  position: relative;
+  padding: 10px 25px;
+  background-color: var(--clr);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+}
+.container .drop .content a:hover {
+  opacity: 1;
+}
