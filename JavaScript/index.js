@@ -7,9 +7,31 @@ let water = document.getElementById("water");
 let header = document.getElementById("header");
 let fish1 = document.getElementById("fish1");
 const drop1 = document.querySelector("#drop__1");
+const HeaderContainer = document.querySelector("#header-container");
+
+const homePageContainer = document.querySelector("#home-page-container");
+const aboutMeContainer = document.querySelector("#about-me-container");
+const projectContainer = document.querySelector("#project-container");
+const bubbleHolder = document.querySelector("#bubble");
+const footer = document.querySelector("#footer");
+const preloader = document.querySelector("#preloader");
 console.log(drop1);
 const swiftUpElements = document.querySelectorAll(".swift-up-text");
+
 console.log(swiftUpElements);
+
+window.addEventListener("load", function () {
+  this.setTimeout(() => {
+    preloader.classList.add("hide-preloader");
+    homePageContainer.classList.remove("home-page-conatiner");
+    aboutMeContainer.classList.remove("about-me-container");
+    projectContainer.classList.remove("project-container");
+    bubbleHolder.classList.remove("bubble");
+    footer.classList.remove("footer-remove");
+    HeaderContainer.classList.remove("Header-container");
+  }, 2000);
+  console.log();
+});
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;

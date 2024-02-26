@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
+  user-select: none;
 
   font-family: "Poppins", sans-serif;
 }
 :root {
   --color-text: #151618;
 }
-.newBody {
-  overflow-x: hidden;
+
+.Header-container {
+  display: none;
 }
 
 /* navigation css */
@@ -152,12 +158,39 @@
       );
     }
   }
-  .intro .i-left span:nth-child(3) {
+  .intro .i-left span:nth-child(3),
+  span:nth-child(4) {
     line-height: 2em;
     text-wrap: wrap;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: large;
+    font-family: "Montserrat", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 300;
+    font-style: normal;
   }
+
+  .intro .i-left a {
+    margin-left: 10px;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    height: 7%;
+    width: 100px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    background-color: #eff0f4;
+    padding: 0.5rem;
+    border: 2px;
+    border-radius: 1.5rem;
+    text-align: center;
+  }
+  .intro .i-left a:hover {
+    background-color: turquoise;
+    color: #eff0f4;
+  }
+
   section::before {
     content: " ";
     position: absolute;
@@ -677,4 +710,32 @@ i {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+}
+.preloder {
+  position: absolute;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 3s ease-in-out;
+}
+.preloader > lottie-player {
+  width: 200px;
+  height: 200px;
+}
+
+.home-page-conatiner,
+.about-me-container,
+.project-container,
+.bubble,
+.footer-remove {
+  display: none;
+}
+.hide-preloader {
+  display: none;
+  opacity: 0;
 }
