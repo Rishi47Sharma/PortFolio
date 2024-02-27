@@ -57,7 +57,7 @@ const swift = (para) => {
     words.forEach((el, index) => {
       words[index] = `<span><i>${words[index]}</i></span>`;
     });
-    console.log(words.join(""));
+    // console.log(words.join(""));
 
     elem.innerHTML = words.join(" ");
 
