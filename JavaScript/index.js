@@ -134,10 +134,14 @@ const bubbles = Array.from({ length: 5 }, (_, i) =>
 
 bubbles.forEach((bubble, index) => {
   bubble.addEventListener("click", (e) => {
+    console.log(e);
+    console.log(typeof e.target);
     if (e.target.classList.contains("bubble-animation-y")) {
       e.target.classList.remove("bubble-animation-y");
       if (index === 0 || index === 4) {
         bubble.style.bottom = "250px";
+      } else if (index === 3 || index === 2) {
+        bubble.style.top = "20px";
       } else {
         bubble.style.top = "0px";
       }
