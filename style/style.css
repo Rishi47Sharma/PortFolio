@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -31,8 +30,7 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-header);
-  /* 
-  align-items: center; */
+
   z-index: 100;
 }
 .header .logo {
@@ -335,6 +333,7 @@
   transform: translate(-50%, -50%);
   overflow: hidden;
   z-index: 100;
+  font-family: "Poppins", sans-serif;
 }
 .inner-slider {
   padding: 16px;
@@ -343,7 +342,7 @@
   gap: 4rem;
   position: absolute;
   top: 30%;
-  left: 0;
+  left: -60px;
 }
 .drop {
   position: relative;
@@ -355,30 +354,10 @@
   transition: border-radius 0.4s ease-in-out;
 }
 
-.drop:nth-child(1) {
+.drop {
   border-radius: 50% 70% 70% 50% / 50% 50% 70% 70%;
 }
-.drop:nth-child(1) {
-  border-radius: 50% 70% 70% 50% / 50% 50% 70% 70%;
-}
-.drop:nth-child(2) {
-  border-radius: 50% 50% 70% 30% / 62% 60% 40% 38%;
-}
-.drop:nth-child(3) {
-  border-radius: 70% 50% 50% 30% / 60% 60% 40% 38%;
-}
-.drop:nth-child(4) {
-  border-radius: 70% 50% 50% 30% / 60% 60% 40% 38%;
-}
-.drop:nth-child(5) {
-  border-radius: 70% 50% 50% 30% / 60% 60% 40% 38%;
-}
-.drop:nth-child(6) {
-  border-radius: 70% 50% 50% 30% / 60% 60% 40% 38%;
-}
-.drop:nth-child(7) {
-  border-radius: 70% 50% 50% 30% / 60% 60% 40% 38%;
-}
+
 .drop:hover {
   border-radius: 50%;
 }
@@ -687,4 +666,39 @@
   color: #094b65;
   font-family: "Poppins", sans-serif;
   pointer-events: none;
+}
+
+.drop .content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 20px;
+  font-size: 1em;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.drop .content h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 20px;
+  font-size: 1em;
+  color: var(--clr);
+  text-align: center;
+}
+.drop .content p,
+.drop .content h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 20px;
+  font-size: 1em;
+
+  text-align: center;
 }
