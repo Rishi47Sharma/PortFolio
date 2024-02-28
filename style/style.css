@@ -507,7 +507,7 @@
 }
 
 .bubble-3 {
-  left: 42%;
+  left: 43%;
   animation-delay: 1s;
 }
 .bubble-3 .bubble-animation-y {
@@ -525,7 +525,7 @@
 }
 
 .bubble-5 {
-  right: 5%;
+  right: 3%;
   animation-delay: 1s;
 }
 .bubble-5 .bubble-animation-y {
@@ -539,9 +539,14 @@
 }
 
 .bubble-large {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   border-radius: 100%;
+  text-align: center;
   box-shadow: 0 20px 30px rgba(174, 170, 170, 0.1),
     inset 0px 10px 30px 5px rgb(217, 226, 233);
+  font-family: "Poppins", sans-serif;
 }
 
 .bubble-large {
@@ -628,7 +633,7 @@
   left: 50%;
   --r1: 154%;
   --r2: 68.5%;
-  width: 100px;
+  width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(

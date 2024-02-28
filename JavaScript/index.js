@@ -75,7 +75,6 @@ const swift = (para) => {
     const words = elem.textContent
       .split(" ")
       .filter((word) => word.trim() !== "");
-    console.log(words);
 
     elem.innerHTML = "";
 
@@ -93,3 +92,63 @@ const swift = (para) => {
     });
   });
 };
+// const bubble1 = document.querySelector("#bubble1");
+// const bubble2 = document.querySelector("#bubble2");
+// const bubble3 = document.querySelector("#bubble3");
+// const bubble4 = document.querySelector("#bubble4");
+// const bubble5 = document.querySelector("#bubble5");
+
+// bubble2.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("bubble-animation-y")) {
+//     e.target.classList.remove("bubble-animation-y");
+//     bubble2.style.top = "0px";
+//   }
+// });
+// bubble3.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("bubble-animation-y")) {
+//     e.target.classList.remove("bubble-animation-y");
+//     bubble3.style.top = "0px";
+//   }
+// });
+// bubble4.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("bubble-animation-y")) {
+//     e.target.classList.remove("bubble-animation-y");
+//     bubble4.style.top = "0px";
+//   }
+// });
+// bubble5.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("bubble-animation-y")) {
+//     e.target.classList.remove("bubble-animation-y");
+//     bubble5.style.bottom = "250px";
+//   }
+// });
+// bubble1.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("bubble-animation-y")) {
+//     e.target.classList.remove("bubble-animation-y");
+//     bubble1.style.bottom = "250px";
+//   }
+// });
+const bubbles = Array.from({ length: 5 }, (_, i) =>
+  document.querySelector(`#bubble${i + 1}`)
+);
+
+bubbles.forEach((bubble, index) => {
+  bubble.addEventListener("click", (e) => {
+    if (e.target.classList.contains("bubble-animation-y")) {
+      e.target.classList.remove("bubble-animation-y");
+      if (index === 0 || index === 4) {
+        bubble.style.bottom = "250px";
+      } else {
+        bubble.style.top = "0px";
+      }
+    }
+  });
+
+  bubble.addEventListener("mouseenter", () => {
+    bubble.style.cursor = "pointer";
+  });
+
+  bubble.addEventListener("mouseleave", () => {
+    bubble.style.cursor = "default";
+  });
+});
