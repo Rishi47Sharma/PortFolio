@@ -1,250 +1,258 @@
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
-    <link rel="stylesheet" href="./style/style.css" />
-    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
-    <!-- font style -->
 
-    <title>Rishikesh Sharma || Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/46b7ceee20.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/style.css"
   </head>
   <body>
-    <div id="preloader" class="preloder"><dotlottie-player src="https://lottie.host/6c50bb6f-3cf8-4f6d-92e4-fed5cc35676f/B3WeahbVMcjson" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-    </div>
-<!-- Header -->
-    <div id="header-container" class="Header-container"  id="home">
-      <!-- Navigation  -->
-      <header id="header">
-        <a href="#" class="logo">Rishikesh</a>
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about-me-container">About</a></li>
-          <li><a href="#footer">Contact</a></li>
-          <li><a href="#bubble">Skills</a></li>
-          <li><a href="#project-container">Project</a></li>
-        </ul>
-        
-          <button class="button" id="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        
-      </header>
-    </div>
-<!-- Firt page-->
-      
-    <section id="home-page-container" class="home-page-conatiner"  >
-        <h2 id="text">
-          <span>SOFTWARE DEVELOPER</span><br />Rishikesh
-          Sharma
-        </h2>
+    <div class="loader"></div>
+    <div class="main-container">
+      <!--header-->
+      <div class="header-container">
+        <header class="header">
+          <a href="#" class="logo">Rishikesh</a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about-me-container">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="#bubble">Skills</a></li>
+            <li><a href="#project-container">Project</a></li>
+          </ul>
+        </header>
+      </div>
+      <!--header end-->
+      <section class="introduction-container">
+        <h2 id="text"><span>SOFTWARE DEVELOPER</span><br />Rishikesh Sharma</h2>
         <img class="bird1" src="./images/bird1.png" id="bird1" />
         <img class="bird" src="./images/bird2.png" id="bird2" />
 
         <img src="./images/rocks.png" id="rocks" />
         <img src="./images/water.png" id="water" />
-    </section>
-<!-- AboutME -->
-    <div id="about-me-container" class="intro about-me-container" id="About">
-        <div class="i-left">
-          <div>
-            <span class="i-about">About me</span>
-            <span class="i-about">About me</span>
-
-            <span
-              >Hello, I'm Rishikesh Sharma, a final-year IT enthusiast crafting digital wonders. Academic explorer by day, coding maestro by night—proficient in HTML, CSS, JS, and the art of ReactJS, Node.js, and more. As a toolbox guru, I command GitHub,Git and Vercel like a tech sorcerer. Seeking new horizons as an Associate Software Engineer, ready to code the future together!</span
+      </section>
+      <!--introDuctionsSections ends-->
+      <div class="about-me-container">
+        <div class="about-text">
+          <span>About me</span>
+          <span>About me</span>
+          <span
+            >Hello, I'm Rishikesh Sharma, a final-year IT enthusiast crafting
+            digital wonders. Academic explorer by day, coding maestro by
+            night—proficient in HTML, CSS, JS, and the art of ReactJS, Node.js,
+            and more. As a toolbox guru, I command GitHub,Git and Vercel like a
+            tech sorcerer. Seeking new horizons as an Associate Software
+            Engineer, ready to code the future together!</span
+          >
+          <span
+            >To know more about me
+            <a
+              download=""
+              href="https://drive.google.com/file/d/1WuvwDNfFJhRroHJ3xZlb9KP14-AlctiN/view?usp=sharing"
+              target="_blank"
             >
-            <span>To know more about me </span>
-           <a download="" href="https://drive.google.com/file/d/1WuvwDNfFJhRroHJ3xZlb9KP14-AlctiN/view?usp=sharing" target="_blank"> Open  CV</a>
-          </div>
+              Open CV</a
+            >
+          </span>
         </div>
-        <div class="i-right">
-          <img src="./images/fish1.png" class="img" id="fish1" alt="" />
+        <div class="about-fish">
+          <img
+            src="./images/fish1.png"
+            class="img"
+            id="fish"
+            alt=""
+            style="right: -300px"
+          />
         </div>
-        <div>
+        <div class="about-wave">
           <div class="wave" id="wave1" style="--i: 1"></div>
           <div class="wave" id="wave2" style="--i: 2"></div>
           <div class="wave" id="wave3" style="--i: 3"></div>
           <div class="wave" id="wave4" style="--i: 4"></div>
         </div>
-    </div>
-<!--Project-->
-    <div id="project-container" class="project__container project-container"  id="project">
-        <div class="i-left project" >
-          <span class="i-project">project</span>
-          <span class="i-project">project</span>
-    </div>
-<!--sliderContainer-->   
-    <div class="slider-container " style="z-index: 1;">
-        <div class="inner-slider container">
-        <div class="card">
-          <div  class="drop" style="--clr: #ff0f5b">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a id="a1" href="#" >Read More</a>
+      </div>
+      <!--about-me-container ends-->
+      <div class="skill-container">
+        <div class="bubble-content">
+          <div class="bubble-1 bubble-container bubble-animation-x">
+            <div class="bubble-large bubble-animation-y">
+              <h1>buble 1</h1>
             </div>
           </div>
-        </div>
-        <div class="card">
-          
-          <div   class="drop" style="--clr: #be01fe">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
-            </div>
+          <div class="bubble-2 bubble-container bubble-animation-x">
+            <div class="bubble-large bubble-animation-y"><h1>buble 2</h1></div>
           </div>
 
+          <div class="bubble-3 bubble-container bubble-animation-x">
+            <div class="bubble-large bubble-animation-y"><h1>buble 3</h1></div>
+          </div>
+
+          <div class="bubble-4 bubble-container bubble-animation-x">
+            <div class="bubble-large bubble-animation-y"><h1>buble 4</h1></div>
+          </div>
+
+          <div class="bubble-5 bubble-container bubble-animation-x">
+            <div class="bubble-large bubble-animation-y"><h1>REACT</h1></div>
+          </div>
         </div>
-        <div class="card">
-          <div class="drop" style="--clr: #01b4ff">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
+
+        <div class="swift-container">
+          <h1 id="swift" class="swift-up-text">
+            These are the languages and tools I might know.
+          </h1>
+        </div>
+
+        <div class="skill-wave">
+          <div class="wave" id="wave1" style="--i: 1"></div>
+          <div class="wave" id="wave2" style="--i: 2"></div>
+          <div class="wave" id="wave3" style="--i: 3"></div>
+          <div class="wave" id="wave4" style="--i: 4"></div>
+        </div>
+      </div>
+
+      <!--project-container ends-->
+      <div class="project-container">
+        <div class="project-logo">
+          <span>project</span>
+          <span>project</span>
+        </div>
+        <div class="slider-container" style="z-index: 1">
+          <div class="inner-slider container">
+            <div class="drop" style="--clr: #ff0f5b">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a id="a1" href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #be01fe">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #01b4ff">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #01b4ff">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #01b4ff">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #01b4ff">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="drop" style="--clr: #01b4ff">
+              <div class="content">
+                <h2>01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptates non porro explicabo itaque nam consectetur
+                  cumque quo quam assumenda error, dolor provident molestiae,
+                  harum doloremque? Modi quisquam unde officiis.
+                </p>
+                <a href="#">Read More</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="drop" style="--clr: #01b4ff">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
+      </div>
+      <!--skill-container ends-->
+      <footer id="footer" class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-logo">Rishikesh Sharma</div>
+
+            <div class="footer-social">
+              <span style="">Contact me </span>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="drop" style="--clr: #01b4ff">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="drop" style="--clr: #01b4ff">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="drop" style="--clr: #01b4ff">
-            <div class="content">
-              <h2>01</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptates non porro explicabo itaque nam consectetur cumque quo
-                quam assumenda error, dolor provident molestiae, harum
-                doloremque? Modi quisquam unde officiis.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-          </div>
-      </div>
-   </div>
-<!--Skills-->
-    <div id="bubble" class="bubble-holder bubble" id="Skills" > 
-      
-      <div class="bubble-1 bubble-container bubble-animation-x">
-        <div class="bubble-large bubble-animation-y ">
-          <h1>buble 1</h1>
-        </div>
-      </div>
-    
-      <div class="bubble-2 bubble-container bubble-animation-x">
-        <div class="bubble-large bubble-animation-y"><h1>buble 2</h1></div>
-      </div>
-    
-      <div class="bubble-3 bubble-container bubble-animation-x">
-        <div class="bubble-large bubble-animation-y"><h1>buble 3</h1></div>
-      </div>
-      
-      <div class="bubble-4 bubble-container bubble-animation-x">
-        <div class="bubble-large bubble-animation-y"><h1>buble 4</h1></div>
-      </div>
-      
-       <div class="bubble-5 bubble-container bubble-animation-x">
-        <div class="bubble-large bubble-animation-y"><h1>REACT</h1></div>
-      </div>
-      
-     
-      <div class="swift-container">
-        <h1 id="swift" class="swift-up-text">These are the languages and tools I might know.</h1>
-      </div>
-     
-       
-    </div>
-<!--Footer-->
-      <footer  id="footer" class="footer footer-remove ">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-logo">
-           Rishikesh Sharma
-          </div>
-         
-          <div class="footer-social">
-            <span style="margin: 10px;">Contact me </span>
-            <ul class="social-icons">
-              <li><a href="#"><i class="fa-brands fa-github"></i></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      
-      </div>
       </footer>
-    
-
-   
-    
+      <!--footer ends-->
+    </div>
+    <script src="./JavaScript/index.js"></script>
   </body>
-  
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-  
-  <script src="./JavaScript/index.js"></script>
 </html>
